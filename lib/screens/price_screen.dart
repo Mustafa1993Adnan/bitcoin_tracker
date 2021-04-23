@@ -1,3 +1,4 @@
+import 'package:bitcoin_tracker/constants.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../coin_data.dart';
@@ -145,17 +146,31 @@ class _PriceScreenState extends State<PriceScreen> {
           Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text('Crypto Currencies'),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  'Crypto Currencies',
+                  style: TextStyle(
+                      color: kPrimaryColor, fontWeight: FontWeight.bold),
+                ),
+              ),
               Container(
                   height: 150.0,
                   alignment: Alignment.center,
                   padding: EdgeInsets.only(bottom: 30.0),
-                  color: Color(0xFF6d4bff),
+                  color: kPrimaryColor,
                   child: Platform.isIOS ? getIOSCrypto() : getAndroidCrypto()),
               SizedBox(
                 height: 18,
               ),
-              Text('Currencies'),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  'Currencies',
+                  style: TextStyle(
+                      color: kPrimaryColor, fontWeight: FontWeight.bold),
+                ),
+              ),
               Container(
                   height: 150.0,
                   alignment: Alignment.center,
