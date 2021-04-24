@@ -1,3 +1,4 @@
+import 'package:bitcoin_tracker/constants.dart';
 import 'package:bitcoin_tracker/screens/loading_screen.dart';
 import 'package:flutter/material.dart';
 import 'screens/price_screen.dart';
@@ -9,8 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData.dark().copyWith(
-          primaryColor: Color(0xFF6d4bff),
-          scaffoldBackgroundColor: Colors.white),
+          primaryColor: kPrimaryColor, scaffoldBackgroundColor: Colors.white),
       home: LoadingScreen(),
       //PriceScreen(),
     );

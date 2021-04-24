@@ -29,7 +29,8 @@ const List<String> cryptoList = [
   'ETH',
   'LTC',
 ];
-const apiKey = 'C382924F-CEA2-4BDF-8C8A-B1636074CFEC';
+const apiKey = '07837D6F-60B5-4558-90E9-3355A1E3BC19';
+// const apiKey = 'C382924F-CEA2-4BDF-8C8A-B1636074CFEC';
 const coinApiUrl = 'https://rest.coinapi.io/v1/exchangerate';
 
 class CoinModel {
